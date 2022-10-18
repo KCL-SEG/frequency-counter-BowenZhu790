@@ -3,5 +3,9 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    for i in range(len(items)):
+        modify_key = str(items[i])
+        frequencies[modify_key] = frequencies.get(modify_key,0) + 1
+
+
     return frequencies
